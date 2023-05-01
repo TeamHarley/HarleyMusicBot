@@ -7,10 +7,7 @@
 #
 # All rights reserved.
 
-from .channelplay import *
-from .database import *
-from .decorators import *
-from .formatters import *
-from .inline import *
-from .pastebin import *
-from .sys import *
+
+class AssistantErr(Exception):
+    def __init__(self, errr: str):
+        super().__init__(errr)
